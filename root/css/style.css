@@ -11,28 +11,23 @@
 body {
     background-color: #F5F5F5;
 }
-
 .flex {
     display: flex;
     flex-direction: column;
 }
-
 button {
     background-color: #8B48BF;
-    ;
 }
 .no {
     display: none;
 }
 /*Botones*/
-
 .btn-grande {
     height: 44px;
     width: 134px;
     border-radius: 50px;
     color: #FFFFFF;
 }
-
 .btn-chico {
     height: 43px;
     width: 70px;
@@ -40,9 +35,7 @@ button {
     color: #FFFFFF;
     border:0px ;
     }
-
     /*header*/
-
 .encabezado {
     flex-direction: row;
     justify-content: space-between;
@@ -50,39 +43,31 @@ button {
     height: 20%;
     padding: 40px;
 }
-
-
 .burger {
     width: 46.88px;
 }
-
 /*main*/
 /* Imagen Padel y descripción*/
 
 .contenedor-padel {
-    height: 100%;
-    padding: 40px;
+    width: 80vw;
     justify-content: space-between;
-
+    align-items: flex-end;
+    gap: 6rem;
+    margin: 10%;
 }
 .titulo {
-    justify-content:space-around;
-align-items: flex-end; 
-text-align: right;
-
+    justify-content:space-between;
+    align-items: flex-end;
+    text-align: right;
+    gap: 28px;
 }
 .padel {
-    padding-bottom: 40px;
     width: 100%;
-    padding: 30px 0px;
-
 }
 h1 {
-    line-height: 57.3px;
-   font-size: 50px;
-   padding-bottom: 40px;
-
-   
+    font-size: 50px;
+    line-height: 114.6%;
 }
 .titulo p {
     padding-bottom: 30px;
@@ -91,17 +76,20 @@ h1 {
 /*Barra Turqueza/Viioleta*/
 
 .comentario-1 {
-    background-color: #3CDDF3;
+    height: 50vh;
+    width: 100vw;
     justify-content: space-between;
-    padding: 40px 20px;
+    background-color: #3CDDF3;
     color: #FFFFFF;
     font-size: 16px;
-    line-height: 24.18px;
-    height: 60vh;
+    line-height: 151.1%;
+    padding: 10% 5%;
+    text-align: left;
+    
 }
 .comentario-1 h2 {
     font-size: 36px;
-    line-height: 41.26px;
+    line-height: 101.6%;
 
 }
 
