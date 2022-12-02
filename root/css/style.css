@@ -10,6 +10,7 @@
 
 body {
     background-color:#FFFFFF;
+    width: 100vw;
 }
 .flex {
     display: flex;
@@ -17,6 +18,11 @@ body {
 }
 button {
     background-color: #8B48BF;
+}
+.btn-grande:hover{
+    background-color:rgb(167, 162, 172);
+    color: #8B48BF;
+    cursor:pointer
 }
 .no {
     display: none;
@@ -32,6 +38,9 @@ a:active, a:link, a:visited {
     color: #FFFFFF;
     border:0px;
     text-align: center;
+    background-color: #8B48BF;
+    text-align: center;
+    padding-left: 5px;
     
 }
 .btn-chico {
@@ -41,29 +50,42 @@ a:active, a:link, a:visited {
     color: #FFFFFF;
     border:0px ;
     }
+
     /*header*/
+
 .encabezado {
-    width: 80vw;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5% 5%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5%;
 }
+.nav-header {
+        width: 40%;
+       
+}
+.nav {
+        width: 100%;
+        font-size: 13px;
+        color:  #242E52;
+        line-height: 176.1%;
+        padding: 0px 10%
+}
+
 .burger {
     width: 46.88px;
 }
-.nav-header {
-    width: 55%;
-}
+
+
 /*main*/
 /* Imagen Padel y descripción*/
 
 .contenedor-padel {
-    width: 80vw;
+    width:100vw;
     justify-content: space-between;
     align-items: flex-end;
     gap: 6rem;
-    margin: 10%;
+    padding: 5% 10%;
 }
 .titulo {
     justify-content:space-between;
@@ -91,7 +113,7 @@ h1 {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 151.1%;
-    padding: 5% 5%;
+    padding: 5% ;
     gap: 30px;
     text-align: left;
     
@@ -170,13 +192,14 @@ h1 {
 /*Separador turqueza/violeta*/
 
 .separador {
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
     background-color: #3CDDF3;
-    gap: 20px;
-    padding: 10% 20%;
-   
+    gap: 30px;
+    padding: 5%;
+    
+      
 }
 
 .separador h2 {
@@ -186,6 +209,7 @@ h1 {
     line-height: 48px;
     letter-spacing: -0.005em;
     color: #fafafa;
+    padding: 10% ;
     
 }
 .separador .btn-grande {
@@ -194,21 +218,20 @@ h1 {
 }
 /*footer*/
 footer {
-    width: 100%;
-    background-color: #232C50;
+    background-color: #1E1E26;
     color:#fafafa;
     padding: 5%;
     text-align: center;
-    
 
 }
+
+
 .footer-conteiner {
-    width: 100%;
-    height: 80%;
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    margin: 5%;
+    margin: 0px 5%;
+    gap: 30px;
 }
 
 .redes {
@@ -228,6 +251,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 5%;
 }
 .formulario input {
     width:308px ;
@@ -242,32 +266,45 @@ footer {
 .nav-footer {
     width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
 }
 .nav-footer ul {
     justify-content: space-around;
     align-items: flex-start;
     text-decoration: none;
+    gap: 25px;
+    font-size: 16px;
+    line-height: 23px;
     
 }
 
 .logo-redes {
     width: 100%;
-    height: 30%;
     flex-direction: column-reverse;
     justify-content: space-around;
     align-items: center;
+    margin: 10% 5%;
+    gap: 10px;
 }
 footer a {
     color: #FFFFFF;
 }
+.copy {
+    font-size: 12.5;
+    line-height: 18px;
+    color: #8C8C94;
+}
 /*Version Desktop*/
 
-@media (min-width: 1440px) {
-    .btn-grande, .testimonios-conteiner, .encabezado, .contenedor-padel, .comentario-1, .tarjetas, .separador, .footer-conteiner {
+@media (min-width: 1360px) {
+    .btn-grande, .testimonios-conteiner, 
+    .encabezado, .contenedor-padel, .comentario-1, 
+    .tarjetas, .separador, .footer-conteiner {
         flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        
     }
     .burger {
         display: none;
@@ -285,5 +322,33 @@ footer a {
     .testimonios-conteiner {
         justify-content: space-around;
     }
-    
+    .comentario-1, .separador {
+        background-color: #8B48BF;
+    }
+    .separador h2 {
+        text-align: start;
+        padding: 0px;
+    }
+    .logo-redes {
+        height: 187px;
+        flex-direction: column;
+        justify-content:space-between;
+        margin: 0px;
+        padding: 10px 30px;
+        
+    }
+    .footer-conteiner {
+        align-items: flex-start;
+    }
+    .copy {
+        text-align: right;
+    }
+    .formulario {
+        margin: 0px;
+        padding: 10px 20px;
+    }
+    .redes {
+        width: 70%;
+        padding: 0px 10px;
+    }
 }
